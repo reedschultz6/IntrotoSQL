@@ -1,6 +1,7 @@
 -- What teams in history have won more than 100 games in a single
 -- season, chronologically?
-
+.headers on
+.mode columns
 -- Expected result: 92 rows, ending with
 --
 -- | 2016 | Chicago Cubs           | 103  |
@@ -14,5 +15,5 @@
 -- | 2019 | Minnesota Twins        | 101  |
 -- | 2019 | New York Yankees       | 103  |
 -- +------+------------------------+------+
-
+SELECT year, name, wins FROM teams WHERE wins >100;
 
