@@ -11,4 +11,6 @@
 -- +------+-------------------+
 
 
-SELECT year, name FROM teams WHERE park = "Guaranteed Rate Field";
+SELECT year, name, park
+FROM teams 
+WHERE park = "Guaranteed Rate Field";
