@@ -5,7 +5,8 @@
 -- +---------------+------------+-----------+-----------+
 -- | New York Mets | Pete       | Alonso    | 53        |
 -- +---------------+------------+-----------+-----------+
-
+.mode columns
+.headers on
 
 SELECT name, first_name, last_name, home_runs
 FROM players
