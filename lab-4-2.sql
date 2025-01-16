@@ -5,6 +5,16 @@
 -- WHERE column1 = expression1
 -- AND column2 = expression2
 
+.mode columns
+.headers on
+
+SELECT first_name, last_name
+FROM players
+INNER JOIN stats ON players.id = stats.player_id
+INNER JOIN teams ON stats.team_id = teams.id
+WHERE year = "2020"
+AND name = "Chicago Cubs";
+
 -- Expected result: 47 rows starting with
 --
 -- +------------+-----------+
